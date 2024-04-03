@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Registration</title>
-    <!-- Bootstrap CSS for responsive layout -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS for additional styling -->
+ï»¿
     <style>
         body {
             background-color: #f4f4f4;
@@ -61,37 +53,28 @@
                 color: #fff;
             }
 
-     
     </style>
-</head>
-<body>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card card-custom rounded">
-                    <div class="card-header card-header-custom">Cores Cadastradas</div>
+                    <div class="card-header card-header-custom">Cadastre Sua Cor</div>
                     <div class="card-body">
-                        <h3 class="fs-4">Descrição</h3>
-                        <hr>
-                        <h4 class="fs-5">Id: 3434343</h4>
-                        <hr>
-                        <button type="button" class="btn btn-custom">Ver Mais</button>
+                        <h3 class="fs-4">DescriÃ§Ã£o</h3>
+                        <input type="text" class="form-control mb-3" placeholder="Insira a DescriÃ§Ã£o Da Sua Cor" />
+                        <button type="button" class="btn btn-custom">Adicionar</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex align-items-start justify-content-end">
                 <div class="input-group mb-3 gap-2">
-                    <input type="text" class="form-control" placeholder="Oque Você esta Procurando" aria-label="Oque Você esta Procurando" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button">Pesquisar</button>
-                    </div>
-                    <img src="~/img/cromatico.png" class="img-fluid" alt="Imagem Cromática" />
-                    <a asp-controller="Color" asp-action="Cadastre" type="button" class="btn btn-outline-primary btnAdd w-100">Adicionar</a>
+                   
+                    <img src="~/img/cromatico.png" class="img-fluid" alt="Imagem CromÃ¡tica" />
+                    <a asp-controller="Color" asp-action="Cadastre" type="button" class="btn btn-outline-primary btnAdd w-100">Voltar</a>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
     <!-- Bootstrap JS for responsive components -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+   

@@ -10,5 +10,11 @@ public class ColorController : Controller
         return View();
     }
 
-   
+    [HttpGet]
+    public ActionResult Cadastre()
+    {
+        return View();
+    }
+
+
 }
