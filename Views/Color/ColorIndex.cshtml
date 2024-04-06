@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Registration</title>
-    <!-- Bootstrap CSS for responsive layout -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS for additional styling -->
+
     <style>
         body {
             background-color: #f4f4f4;
@@ -15,8 +7,8 @@
 
         .card-custom {
             background: linear-gradient(45deg, #6ab1d7 0%, #3383cd 100%);
-            border: none;
             color: white;
+            border: none;
         }
 
         .card-header-custom {
@@ -24,6 +16,8 @@
             color: #333;
             font-size: 1.5rem;
             text-align: center;
+            display:flex;
+            gap:8px;
         }
 
         .search-bar {
@@ -60,23 +54,34 @@
                 background-color: #007bff;
                 color: #fff;
             }
+        .colors
+        {   
+            border-bottom: 2px solid black;
+        }
 
      
     </style>
-</head>
-<body>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card card-custom rounded">
                     <div class="card-header card-header-custom">Cores Cadastradas</div>
-                    <div class="card-body">
-                        <h3 class="fs-4">Descrição</h3>
-                        <hr>
-                        <h4 class="fs-5">Id: 3434343</h4>
-                        <hr>
-                        <button type="button" class="btn btn-custom">Ver Mais</button>
+                    <div class="overflow-auto">
+                        <!-- Esta classe deve ser aplicada aqui -->
+                        <div class="card-body colors">
+                            <h3 class="fs-4">Descrição:  </h3>
+                            <hr>
+                            <h4 class="fs-5">Id: </h4>
+                            <hr>
+                            <h4 class="fs-5">CreatedBy: </h4>
+                            <hr />
+                            <button type="button" class="btn btn-custom">Ver Mais</button>
+                        </div>
+
                     </div>
+
+
                 </div>
             </div>
             <div class="col-md-4 d-flex align-items-start justify-content-end">
@@ -91,7 +96,4 @@
                 </div>
         </div>
     </div>
-    <!-- Bootstrap JS for responsive components -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
